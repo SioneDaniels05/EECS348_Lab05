@@ -2,7 +2,7 @@
  * EECS 348 - Friday 3pm
  * 10/13/2024
  * KUID: 3133752
- * Purpose: to handle matrix's 
+ * Purpose: to handle matrix's and do aritmetic with them
  * */
 #include <stdio.h>
 #define SIZE 5
