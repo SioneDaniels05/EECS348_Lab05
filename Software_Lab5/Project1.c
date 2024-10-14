@@ -17,7 +17,7 @@ void monthly_sale(double data[]) {
 	printf("Month  \t\tSales\n");
 	for (int i = 0; i < 12; i++){
 		printf("%s   \t%lf\n", months[i], data[i]);
-	}
+		}
 	printf("-----\n");	
 	}
 
@@ -27,10 +27,10 @@ void sales_min(double data[]) {
 	int i = 0;
 	float lowest = data[i];
 	for (int i = 0; i < 12; i++){
-	float temp = data[i];
-	float temp2 = data[i+1];
-	if ((temp < temp2) && (lowest > temp)){
-		lowest = temp;
+		float temp = data[i];
+		float temp2 = data[i+1];
+		if ((temp < temp2) && (lowest > temp)){
+			lowest = temp;
 	}}
 	printf("Minimum Sales: %f\n", lowest);
 	}
@@ -40,10 +40,10 @@ void sales_max(double data[]) {
         int i = 0;
         float highest = data[i];
         for (int i = 0; i < 12; i++){
-        float temp = data[i];
-        float temp2 = data[i+1];
-        if (temp < temp2){
-                highest = data[i+1];
+        	float temp = data[i];
+        	float temp2 = data[i+1];
+        	if (temp < temp2){
+                	highest = data[i+1];
         }}
         printf("Maximum Sales: %f\n", highest);
 }
@@ -52,8 +52,8 @@ void sales_max(double data[]) {
 void sales_avg(double data[]) {
        	float total = 0;
         for (int i = 0; i < 12; i++){
-        total = (total + data[i]);
-        }
+        	total = (total + data[i]);
+        	}
 	total = (total/12);
         printf("Average Sales: %f\n", total);
         printf("-----\n");
