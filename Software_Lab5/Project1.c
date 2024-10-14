@@ -99,24 +99,24 @@ void six_month(double data[]) {
 
 //print the sale in decending order with each matching month
 void sales_report(double data[]) {
-    double data2[12];
-    for (int i = 0; i < 12; i++) {
-        data2[i] = data[i];
-    }
-    for (int i = 0; i < 12; i++) {
-        for (int a = 0; a < 12 - i - 1; a++) {
-            if (data2[a] < data2[a + 1]) {
-                double temp = data2[a];
-                data2[a] = data2[a + 1];
-                data2[a + 1] = temp;
-	    }}}
-    printf("Sales report (highest to lowest):\nMonths   \tSales");
-    for (int i = 0; i < 12; i++) {
-        for (int b = 0; b < 12; b++) {
-            if (data[b] == data2[i]) {
-                printf("\n%s    \t%lf", months[b], data2[i]);
-              }}}
-    printf("\n-----\n");
+	double data2[12];
+	for (int i = 0; i < 12; i++) {
+	data2[i] = data[i];
+	}
+	for (int i = 0; i < 12; i++) {
+		for (int a = 0; a < 12 - i - 1; a++) {
+			if (data2[a] < data2[a + 1]){
+				double temp = data2[a];
+				data2[a] = data2[a + 1];
+				data2[a + 1] = temp;
+				}}}
+	printf("Sales report (highest to lowest):\nMonths   \tSales");
+	for (int i = 0; i < 12; i++) {
+		for (int b = 0; b < 12; b++) {
+			if (data[b] == data2[i]) {
+				printf("\n%s    \t%lf", months[b], data2[i]);
+	}}}
+	printf("\n-----\n");
 }
 
 //handle file I/O and calling the required functions to print
